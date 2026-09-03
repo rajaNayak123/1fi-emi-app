@@ -296,14 +296,4 @@ Node/Mongoose version installed by `npm install`.
 
 ---
 
-## Notes on what's included vs. what you still need to do
 
-This package contains the complete source code (backend + frontend),
-committed schema and seed logic, and this README. Two deliverables from the
-assignment need to be produced by you, since they require actions outside
-of this codebase:
-
-- **The 2–5 minute demo video** — record yourself running the app locally
-  (or the deployed version) and narrating the backend/DB.
-- **The deployed link** — push this repo to GitHub, then deploy following
-  the steps above.
