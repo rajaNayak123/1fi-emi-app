@@ -4,7 +4,7 @@ A full-stack app that shows smartphones with multiple EMI plans backed by mutual
 funds. Product info, pricing, variants, and EMI plans are all served dynamically
 from a database via a REST API — nothing is hardcoded in the frontend.
 
-**Live demo:** _add your deployed link here after deploying (see [Deployment](#deployment))_
+**Live demo:** _add your deployed link here after deploying (see [Deployment](https://frontend-five-murex-82.vercel.app/))_
 **Demo video:** _add your Google Drive / YouTube link here_
 
 ---
