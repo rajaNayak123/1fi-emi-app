@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-feature-settings: "ss01" 1;
+  }
+  ::selection {
+    background: #D8ECE1;
+  }
+  *:focus-visible {
+    outline: 2px solid #1F7A57;
+    outline-offset: 2px;
+  }
+}
