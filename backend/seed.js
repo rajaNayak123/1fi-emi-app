@@ -6,8 +6,9 @@ import EmiPlanTemplate from "./models/EmiPlanTemplate.js";
 import Order from "./models/Order.js";
 import mongoose from "mongoose";
 
-const img = (label, bg, fg = "ffffff") =>
-  `https://placehold.co/600x600/${bg}/${fg}?text=${encodeURIComponent(label)}`;
+const iphoneImg = "https://cdn.dribbble.com/userupload/45078113/file/d2fa39c906afe092b3f5b07af838f778.png?resize=1600x1200"
+const samsungImg = "https://api.samsungmobilepress.com/api/v1/file/FC05AE750AD6EB0673D9E9D4C157D4FDCA91C0319D37B2827A4ACC850D3D124959298BB89A1D18EEB9531CE7B6BDB56BB43890C99A07EF46FFD865333FEC385C3A4ECDA52E32E217D32C2807BAAF403A9124FE24BD2AD9F141EA995A91D14E9095EC253173B6A26FE1DB745A586CC1ADDE7D6D440FA45C94CA365A5CF1A540E7"
+const pixelImg = "https://lh3.googleusercontent.com/cUnl8qDLSpzTlH9_9fIEpNHq8EiVH-JwF-r0FPGha83zS26d0FO4LYUxYDU-k3CO6VDt9pyMOHWXiSvvFcenGccNM5B1L8TVO-2OtA=w1000-rj-sc0xffffffff";
 
 const LADDER = [
   { tenureMonths: 3, interestRate: 0 },
@@ -71,9 +72,9 @@ async function seed() {
     badge: "NEW",
     cashback: 7500,
     variants: [
-      { type: "storage", label: "256GB", swatchHex: "#3b3a3e", mrp: 134900, price: 127400, imageUrl: img("iPhone 17 Pro 256GB", "3b3a3e"), stock: 30 },
-      { type: "storage", label: "512GB", swatchHex: "#3b3a3e", mrp: 154900, price: 146900, imageUrl: img("iPhone 17 Pro 512GB", "3b3a3e"), stock: 18 },
-      { type: "storage", label: "1TB", swatchHex: "#3b3a3e", mrp: 174900, price: 165900, imageUrl: img("iPhone 17 Pro 1TB", "3b3a3e"), stock: 9 },
+      { type: "storage", label: "256GB", swatchHex: "#3b3a3e", mrp: 134900, price: 127400, imageUrl: iphoneImg, stock: 30 },
+      { type: "storage", label: "512GB", swatchHex: "#3b3a3e", mrp: 154900, price: 146900, imageUrl: iphoneImg, stock: 18 },
+      { type: "storage", label: "1TB", swatchHex: "#3b3a3e", mrp: 174900, price: 165900, imageUrl: iphoneImg, stock: 9 },
     ],
   });
 
@@ -85,8 +86,8 @@ async function seed() {
     badge: "BESTSELLER",
     cashback: 6000,
     variants: [
-      { type: "storage", label: "256GB", swatchHex: "#1c2b45", mrp: 129999, price: 119999, imageUrl: img("Galaxy S25 Ultra 256GB", "1c2b45"), stock: 40 },
-      { type: "storage", label: "512GB", swatchHex: "#1c2b45", mrp: 139999, price: 129999, imageUrl: img("Galaxy S25 Ultra 512GB", "1c2b45"), stock: 22 },
+      { type: "storage", label: "256GB", swatchHex: "#1c2b45", mrp: 129999, price: 119999, imageUrl: samsungImg, stock: 40 },
+      { type: "storage", label: "512GB", swatchHex: "#1c2b45", mrp: 139999, price: 129999, imageUrl: samsungImg, stock: 22 },
     ],
   });
 
@@ -98,9 +99,9 @@ async function seed() {
     badge: "",
     cashback: 5000,
     variants: [
-      { type: "color", label: "Obsidian", swatchHex: "#1a1a1a", mrp: 109999, price: 99999, imageUrl: img("Pixel 10 Pro Obsidian", "1a1a1a"), stock: 25 },
-      { type: "color", label: "Porcelain", swatchHex: "#e7dfd3", mrp: 109999, price: 99999, imageUrl: img("Pixel 10 Pro Porcelain", "e7dfd3", "1a1a1a"), stock: 20 },
-      { type: "color", label: "Jade", swatchHex: "#3f5d4f", mrp: 109999, price: 99999, imageUrl: img("Pixel 10 Pro Jade", "3f5d4f"), stock: 15 },
+      { type: "color", label: "Obsidian", swatchHex: "#1a1a1a", mrp: 109999, price: 99999, imageUrl: pixelImg, stock: 25 },
+      { type: "color", label: "Porcelain", swatchHex: "#e7dfd3", mrp: 109999, price: 99999, imageUrl: pixelImg, stock: 20 },
+      { type: "color", label: "Jade", swatchHex: "#3f5d4f", mrp: 109999, price: 99999, imageUrl: pixelImg, stock: 15 },
     ],
   });
 
